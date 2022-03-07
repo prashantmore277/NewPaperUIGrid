@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: "one one two three three" "one one four five five" "six eight seven five five" "six eight nine nine ten";
+}
+
+div {
+    margin: 5px 5px 8px 5px;
+    border-radius: 10px;
+    border: black solid;
+}
